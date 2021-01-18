@@ -57,7 +57,8 @@
     - [Use current date to generate random integers](#use-current-date-to-generate-random-integers)
   - [Strings](#strings)
     - [Prefer `slice` over `substr` over `substring`](#prefer-slice-over-substr-over-substring)
-    - [Split using `''`](#split-using-)
+    - [Split using ` `` `](#split-using-)
+    - [Split using spread Operator](#split-using-spread-operator)
     - [Split using 0](#split-using-0)
     - [Use the little-known `.link` method](#use-the-little-known-link-method)
     - [Use `.search` instead of `.indexOf`](#use-search-instead-of-indexof)
@@ -78,6 +79,7 @@
     - [Coercion to test for types](#coercion-to-test-for-types)
     - [Type-specific methods to test for types](#type-specific-methods-to-test-for-types)
   - [Arrays](#arrays)
+    - [Using the Spread operator](#using-the-spread-operator)
     - [Test array length](#test-array-length)
     - [Use elision](#use-elision)
     - [Use coercion to do `.join(',')`](#use-coercion-to-do-join)
@@ -122,7 +124,7 @@ Javascript golfing is the process of writing the smallest amount of javascript c
 
 ## Why and when should minified code be used?
 
-The purpose of code golfing is to test one's abilities, during challenges. That said, you should not use techniques like this in your normal code, as it compromises readability. Ideally, you should only use these tricks during a challenge. 
+The purpose of code golfing is to test one's abilities, during challenges. That said, you should not use techniques like this in your normal code, as it compromises readability. Ideally, you should only use these tricks during a challenge.
 
 ## Arguments
 
@@ -782,12 +784,24 @@ _Note:_ Do not use in fast loops, because the milliseconds might not change!
 
 Prefer `slice(start,stop)` over `substr(start,length)` over `substring(start,stop)`. Omit the second parameter to fetch everything to the end of the string. Do not use negative positions. It may be shorter (e.g. `s.substr(-n)` fetches the last _n_ characters) but does not work in Internet Explorer (including version 9).
 
-### Split using `''`
+### Split using ` `` `
 
-Use `s.split('')` to create a character array from a string. Unfortunately you can not use `s[i]` to access the characters in the string. This does not work in Internet Explorer (including version 9).
+Use `s.split`` ` to create a character array from a string.
 
 ```javascript
-var chars = 'loremipsum'.split('');
+var chars = 'loremipsum'.split``;
+```
+
+### Split using spread Operator
+
+You can use the spread operator on strings to split them.
+
+```javascript
+let string = "string"
+
+string.split("") // before
+
+[...string] // after
 ```
 
 ### Split using 0
@@ -1119,6 +1133,18 @@ This technique is even faster than string comparison!
 [&uarr; Back to top](#table-of-contents)
 
 ## Arrays
+
+### Using the Spread operator
+
+Instead of passing each item of the array to a function, you can use the spread operator to pass the entire array, as different parameters.
+
+```javascript
+let array = [1,2,3];
+
+someFunc(array[0], array[1], array[2]) // before
+
+someFunc(...array) // after
+```
 
 ### Test array length
 
