@@ -527,7 +527,7 @@ while (i++) { ... }
 
 ### Understand operator precedence
 
-[This Mozilla page](https://developer.mozilla.org/en/JavaScript/Reference/Operators/Operator_Precedence) is an excellent resource to get started.
+[This Mozilla page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence) is an excellent resource to get started.
 
 ### Understand bitwise operator hacks
 
