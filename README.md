@@ -113,21 +113,18 @@
   - [Minification and compression](#minification-and-compression)
   - [JavaScript coding competitions](#javascript-coding-competitions)
   - [Other resources](#other-resources)
+  - [Sources for this list](#sources-for-this-list)
 
 ## What is Javascript Golfing?
 
-Well, Javascript golfing is the process of writing the smallest amount of javascript code to do something awesome. It tests your ability to reduce, reuse, and recycle for the purpose of achieving the tiniest footprint possible.
+Javascript golfing is the process of writing the smallest amount of javascript code to do something awesome. It tests your ability to reduce, reuse, and recycle for the purpose of achieving the tiniest footprint possible.
 
 ## Arguments
-
----------
 
 ### Function Variable Arguments Shorthand
 
 Object literal shorthand can take a little getting used to, but seasoned developers
-usually prefer it over a series of nested functions and variables. You can argue
-which technique is shorter, but I enjoy using object literal notation as a clean
-substitute to functions as constructors.
+usually prefer it over a series of nested functions and variables.
 
 ```javascript
 // Longhand
@@ -211,8 +208,6 @@ setInterval('console.log("z")') // after
 [&uarr; Back to top](#table-of-contents)
 
 ## Variables
-
----------
 
 ```javascript
 var o = {}       // Object literal
@@ -529,8 +524,6 @@ while (i++) { ... }
 [&uarr; Back to top](#table-of-contents)
 
 ## Operators
-
----------
 
 ### Understand operator precedence
 
@@ -1544,3 +1537,7 @@ a=[x=this].slice.call(arguments,1);  // after
 
 - [Suggested Closure Compiler optimizations](http://code.google.com/p/closure-compiler/issues/detail?id=36)
 - [StackExchange Codegolf](http://codegolf.stackexchange.com/questions/2682/tips-for-golfing-in-javascript)
+
+## Sources for this list
+
+Most of the tips, if not all, are gathered from stack overflow code golf threads.
