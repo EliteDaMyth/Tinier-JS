@@ -1,11 +1,6 @@
-# Tinier-JS
+# Table Of Contents
 
-A collection of tricks to help you code golfing with JavaScript/Helping you make your code shorter.
-
-## Table Of Contents
-
-- [Tinier-JS](#tinier-js)
-  - [Table Of Contents](#table-of-contents)
+- [Table Of Contents](#table-of-contents)
   - [What is Javascript Golfing?](#what-is-javascript-golfing)
   - [Arguments](#arguments)
     - [Function Variable Arguments Shorthand](#function-variable-arguments-shorthand)
