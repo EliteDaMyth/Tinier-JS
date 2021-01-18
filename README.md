@@ -2,6 +2,7 @@
 
 - [Table Of Contents](#table-of-contents)
   - [What is Javascript Golfing?](#what-is-javascript-golfing)
+  - [Why and when should minified code be used?](#why-and-when-should-minified-code-be-used)
   - [Arguments](#arguments)
     - [Function Variable Arguments Shorthand](#function-variable-arguments-shorthand)
     - [Use one-letter positional arguments, in alphabetical order](#use-one-letter-positional-arguments-in-alphabetical-order)
@@ -118,6 +119,10 @@
 ## What is Javascript Golfing?
 
 Javascript golfing is the process of writing the smallest amount of javascript code to do something awesome. It tests your ability to reduce, reuse, and recycle for the purpose of achieving the tiniest footprint possible.
+
+## Why and when should minified code be used?
+
+The purpose of code golfing is to test one's abilities, during challenges. That said, you should not use techniques like this in your normal code, as it compromises readability. Ideally, you should only use these tricks during a challenge. 
 
 ## Arguments
 
